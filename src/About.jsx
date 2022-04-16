@@ -15,7 +15,6 @@ function About() {
                </ul>
             </div>
             <div className='text'>
-
                <summary>
                   <h4>Спортивное питание дает возможность организму получить необходимые аминокислоты.</h4>
                </summary>

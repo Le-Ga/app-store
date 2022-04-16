@@ -8,6 +8,10 @@ body {
 .container {
    max-width: 1200px;
    margin   : 0 auto;
+
+   @media all and (max-width: 500px) {
+      padding: 0 10px;
+   }
 }
 
 .cont {
@@ -187,6 +191,7 @@ body {
 
          @media all and (max-width: 500px) {
             font-size: 20px;
+            padding  : 0 0 20px 35px;
          }
 
          &::before {
@@ -197,15 +202,25 @@ body {
             height          : 30px;
             top             : 0;
             left            : 0;
+
+            @media all and (max-width: 500px) {
+               top: -5px;
+            }
          }
       }
    }
 
    @media all and (max-width: 500px) {
       flex-direction: column;
+      align-items   : center;
 
       img {
-         width: 300px;
+         min-width: 300px;
+         max-width: 350px;
+      }
+
+      .about-list {
+         align-self: start;
       }
    }
 }
