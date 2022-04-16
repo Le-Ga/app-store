@@ -185,6 +185,10 @@ body {
          position: relative;
          padding : 0 0 20px 40px;
 
+         @media all and (max-width: 500px) {
+            font-size: 20px;
+         }
+
          &::before {
             content         : '';
             background-image: url('./flexed-biceps.svg');
@@ -194,6 +198,14 @@ body {
             top             : 0;
             left            : 0;
          }
+      }
+   }
+
+   @media all and (max-width: 500px) {
+      flex-direction: column;
+
+      img {
+         width: 300px;
       }
    }
 }
